@@ -1,2 +1,2 @@
-# djfull_sistema
+# Djfull Sistema
 Sistema en django
