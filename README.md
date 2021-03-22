@@ -1,2 +1,3 @@
 # Djfull Sistema
-Sistema en django
+ 
+:zap: Sistema de Compra y Facturación con Python usando Django  :sparkles:
