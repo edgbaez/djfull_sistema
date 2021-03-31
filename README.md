@@ -13,7 +13,7 @@
 - Django.
 - Postgressql.
 
-###  ⏰ Instructions
+###  🏁 Instructions
 
 
 ###   Instalación
