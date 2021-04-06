@@ -13,5 +13,4 @@ urlpatterns = (
          auth_views.LogoutView.as_view(template_name='bases/login.html'),
          name='logout'),
 
-
 )

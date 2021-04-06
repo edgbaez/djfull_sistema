@@ -17,8 +17,7 @@
 
 
 ###   Instalación
-- python -m venv env
-- source env/bin/active
+- 
 - pip install -r requirements.txt
 
 
