@@ -24,5 +24,7 @@
 
 
 ###  Ejecución
+- source envirt/bin/activate
+- python manage.py migrate
 - python manage.py db init
 - python manage.py runserver
