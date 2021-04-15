@@ -9,11 +9,13 @@ import json
 from .models import Proveedor
 from cmp.forms import ProveedorForm
 
+
 class ProveedorView(LoginRequiredMixin, generic.ListView):
     model = Proveedor
     template_name = "cmp/proveedor_list.html"
     context_object_name = "obj"
     login_url = "bases:login"
+
 
 class ProveedorNew(LoginRequiredMixin,
                    generic.CreateView):
