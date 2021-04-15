@@ -10,16 +10,14 @@
 </p>
 
  
-### 💻  Technologies
+## 💻  Technologies
 - Python.
 - Django.
 - Postgressql.
 
-###  🏁 Instructions
-
+##  🏁 Instructions
 
 ###   Instalación
-- 
 - pip install -r requirements.txt
 
 
