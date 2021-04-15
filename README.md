@@ -10,19 +10,19 @@
 </p>
 
  
-### 💻  Technologies
+## 💻  Technologies
 - Python.
 - Django.
 - Postgressql.
 
-###  🏁 Instructions
-
+##  🏁 Instructions
 
 ###   Instalación
-- 
 - pip install -r requirements.txt
 
 
 ###  Ejecución
+- source envirt/bin/activate
+- python manage.py migrate
 - python manage.py db init
 - python manage.py runserver
