@@ -2,23 +2,24 @@ from django.db import models
 
 from bases.models import ClaseModelo
 
+
 class Proveedor(ClaseModelo):
-    descripcion=models.CharField(
+    descripcion = models.CharField(
         max_length=100,
         unique=True
-        )
-    direccion=models.CharField(
+    )
+    direccion = models.CharField(
         max_length=250,
         null=True, blank=True
-        )
-    contacto=models.CharField(
+    )
+    contacto = models.CharField(
         max_length=100
     )
-    telefono=models.CharField(
+    telefono = models.CharField(
         max_length=10,
         null=True, blank=True
     )
-    email=models.CharField(
+    email = models.CharField(
         max_length=250,
         null=True, blank=True
     )
@@ -32,4 +33,3 @@ class Proveedor(ClaseModelo):
 
     class Meta:
         verbose_name_plural = "Proveedores"
-

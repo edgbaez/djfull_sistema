@@ -1,6 +1,5 @@
-from django.db import models
-
 from django.contrib.auth.models import User
+from django.db import models
 
 
 class ClaseModelo(models.Model):
@@ -8,8 +7,7 @@ class ClaseModelo(models.Model):
     fc = models.DateTimeField(auto_now_add=True)
     fm = models.DateTimeField(auto_now=True)
     uc = models.ForeignKey(User, on_delete=models.CASCADE)
-    um = models.IntegerField(blank=True,null=True)
+    um = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        abstract=True
-
+        abstract = True

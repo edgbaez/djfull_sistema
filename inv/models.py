@@ -2,6 +2,7 @@ from django.db import models
 
 from bases.models import ClaseModelo
 
+
 class Categoria(ClaseModelo):
     descripcion = models.CharField(
         max_length=100,
@@ -17,7 +18,7 @@ class Categoria(ClaseModelo):
         super(Categoria, self).save()
 
     class Meta:
-        verbose_name_plural= "Categorias"
+        verbose_name_plural = "Categorias"
 
 
 class SubCategoria(ClaseModelo):
@@ -28,15 +29,15 @@ class SubCategoria(ClaseModelo):
     )
 
     def __str__(self):
-        return '{}:{}'.format(self.categoria.descripcion,self.descripcion)
-    
+        return '{}:{}'.format(self.categoria.descripcion, self.descripcion)
+
     def save(self):
         self.descripcion = self.descripcion.upper()
         super(SubCategoria, self).save()
 
     class Meta:
-        verbose_name_plural= "Sub Categorias"
-        unique_together = ('categoria','descripcion')
+        verbose_name_plural = "Sub Categorias"
+        unique_together = ('categoria', 'descripcion')
 
 
 class Marca(ClaseModelo):
@@ -92,11 +93,11 @@ class Producto(ClaseModelo):
 
     def __str__(self):
         return '{}'.format(self.descripcion)
-    
+
     def save(self):
         self.descripcion = self.descripcion.upper()
-        super(Producto,self).save()
-    
+        super(Producto, self).save()
+
     class Meta:
         verbose_name_plural = "Productos"
-        unique_together = ('codigo','codigo_barra')
+        unique_together = ('codigo', 'codigo_barra')
