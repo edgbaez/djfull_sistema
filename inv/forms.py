@@ -23,7 +23,7 @@ class CategoriaForm(forms.ModelForm):
 class SubCategoriaForm(forms.ModelForm):
     categoria = forms.ModelChoiceField(
         queryset=Categoria.objects.filter(estado=True)
-            .order_by('descripcion')
+        .order_by('descripcion')
     )
 
     class Meta:
@@ -77,7 +77,7 @@ class UMForm(forms.ModelForm):
 class ProductoForm(forms.ModelForm):
     class Meta:
         model = Producto
-        fields = ['codigo', 'codigo_barra', 'descripcion', 'estado', \
+        fields = ['codigo', 'codigo_barra', 'descripcion', 'estado',
                   'precio', 'existencia', 'ultima_compra',
                   'marca', 'subcategoria', 'unidad_medida']
         exclude = ['um', 'fm', 'uc', 'fc']

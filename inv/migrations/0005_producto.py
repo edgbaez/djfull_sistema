@@ -30,7 +30,8 @@ class Migration(migrations.Migration):
                 ('subcategoria', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inv.SubCategoria')),
                 ('uc', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
                 (
-                'unidad_medida', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inv.UnidadMedida')),
+                    'unidad_medida',
+                    models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='inv.UnidadMedida')),
             ],
             options={
                 'verbose_name_plural': 'Productos',
