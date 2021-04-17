@@ -45,7 +45,12 @@
             e.preventDefault();
             //alert("Probando");
 
-            var id = {{ obj.id }};
+            var id = {
+            {
+                obj.id
+            }
+        }
+            ;
             var template = "{% url 'cmp:proveedor_inactivar' obj.id %}";
             //template += id;
             var data = {"id": id};
@@ -61,13 +66,10 @@
                 success: function (response) {
                     console.log(response);
                     cerrar_modal();
-                    {#alert(response);#}
-                    var tipo = (response.startsWith('Proveedor no existe') ? 'red' : 'green')
-                    mensaje(response);
+                    alert(response);
                 },
                 error: function (jqXHR, textStatus, errorThrow) {
                     console.log(textStatus, errorThrow);
-                    mensaje(errorThrow, 'red');
                     cerrar_modal();
                 }
             });
