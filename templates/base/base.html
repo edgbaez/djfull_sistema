@@ -308,17 +308,6 @@
         });
     }
 
-    {%
-        if messages %}
-    {%
-        for message in messages %}
-    mensaje("{{ message }}")
-    {%
-        endfor %
-    }
-    {%
-        endif %
-    }
 
 </script>
     {% endblock%}
